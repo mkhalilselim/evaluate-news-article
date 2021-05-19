@@ -25,8 +25,8 @@ const apiKey = process.env.API_KEY;
 console.log(`Your API key is ${process.env.API_KEY}`);
 
 app.get('/', function (req, res) {
-    //res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('src/client/views/index.html'))
+    res.sendFile('dist/index.html')
+    //res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
 app.post('/evaluate', async (req, res) => {
